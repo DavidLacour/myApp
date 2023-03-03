@@ -1,12 +1,10 @@
-env:
-  CC_TEST_REPORTER_ID: ENCRYPTED[2a34e22da260d235ecf037bcb6a36aa9287d3f548bfd0745e627cbc71ceff99b66832cf40325e45a114e29ae38a1793b]
-
 container:
   image: cirrusci/android-sdk:30
   cpu: 4
   memory: 16G
   kvm: true
-
+env:
+  CC_TEST_REPORTER_ID: ENCRYPTED[2a34e22da260d235ecf037bcb6a36aa9287d3f548bfd0745e627cbc71ceff99b66832cf40325e45a114e29ae38a1793b]
 check_android_task:
   name: Run Android tests
   install_emulator_script:
